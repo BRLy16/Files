@@ -1,0 +1,268 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Luckiest Guy', sans-serif;
+}
+
+body {
+    background-image:url("s.png");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.team-section {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.team-card {
+    text-align: center;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    width: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  a {
+    text-decoration: none;
+    color: inherit; 
+}
+
+  .justine h3 {
+    color: white; 
+  }
+  .justine p {
+    color: white;
+  }
+  
+  
+  .beverly h3 {
+    color: black; 
+  }
+  .beverly p {
+    color: black; 
+  }
+  
+  
+  .ronadel h3 {
+    color: black;
+  }
+  .ronadel p {
+    color: black; 
+  }
+  
+  
+  .amica h3 {
+    color: black; 
+  }
+  .amica p {
+    color: BLACK; 
+  }
+  
+  
+  .jhonrey h3 {
+    color: white; 
+  }
+  .jhonrey p {
+    color: white; 
+  }
+  
+
+.template-text {
+    font-size: 1.2rem;
+    color: #e0e0e0;
+    margin-bottom: 30px;
+}
+
+
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+.team-member img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    object-fit: cover;
+    border: 5px solid #f5f5f5;
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: ;
+}
+
+p {
+    font-size: 0.9rem;
+    color: whitesmoke;
+    margin-bottom: 10px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 5px;
+    text-decoration: none;
+}
+
+.social-icons img {
+    width: 24px;
+    height: 24px;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a:hover img {
+    transform: scale(1.2);
+}
+
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+.team-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.team-member {
+    width: 200px;
+    padding: 20px;
+    border-radius: 15px;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    color: white;
+    position: relative;
+}
+
+
+.justine {
+    background-image: url('justine.jpg');
+}
+
+.beverly {
+    background-image: url('bev.jpg');
+}
+
+.ronadel {
+    background-image: url('rona.jpg');
+}
+
+.amica {
+    background-image: url('mic.png');
+}
+
+.jhonrey {
+    background-image: url('rey.jpg');
+}
+
+
+.team-member img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+    border: 3px solid white;
+}
+
+
+.team-member:hover {
+    transform: translateY(-10px);
+}
+
+
+body:has(#darkModeToggle:checked) {
+    background-image:url("g.png");
+    display: flex;
+    background-size: contain;
+    background-color: #121212;
+    color: #E0E0E0;
+}
+
+.dark-mode .navbar {
+    background-color:#0D3B66;  
+}
+.dark-mode .navbar a {
+    color: #E0E0E0; 
+}
+
+.dark-mode .navbar a:hover {
+    background-color: #1A3A59; 
+}
+
+body.dark-mode #darkModeToggle:checked .hobbies-section {
+    background: #2E2E2E !important;
+    color: #ddd !important;
+}
+
+body:has(#darkModeToggle:checked) .footer {
+    background-color: #494848;
+}
+  
+
+.theme-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+   
+.theme-toggle input {
+    display: none;
+}
+
+
+  
+.theme-toggle .slider {
+    width: 50px;
+    height: 25px;
+    background: #ccc;
+    border-radius: 25px;
+    position: relative;
+    transition: background 0.3s;
+}
+  
+.theme-toggle .slider::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background: white;
+    border-radius: 50%;
+    top: 2.5px;
+    left: 3px;
+    transition: transform 0.3s;
+}
+  
+#darkModeToggle:checked + .slider {
+    background: #333;
+}
+  
+#darkModeToggle:checked + .slider::before {
+    transform: translateX(24px);
+}
